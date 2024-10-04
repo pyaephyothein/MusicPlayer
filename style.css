@@ -1,0 +1,128 @@
+body {
+    background-image: url("images/8331279.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.playList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    border: none;
+    background-color: rgb(232, 213, 244,0.2);
+    opacity: 80%;
+    border-radius: 50px;
+    
+    
+}
+.Music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(232, 213, 244,0.1);
+    width: 100%;
+    height: 100vh;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.trackItem {
+    color: black;
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+    padding: 10px 0px;
+    cursor: pointer;
+    user-select: none;
+    
+
+}
+
+.photos{
+    
+    border: none;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: -2px -2px 2px rgb(30, 30, 30,0.1);
+    overflow: hidden;
+}
+
+#playingTime {
+    color: gold;
+    margin-bottom: 10px;
+
+}
+#progressBar {
+    width: 500px;
+    height: 15px;
+    background-color: gold;
+    border-radius: 10px;
+
+}
+#currentProgress {
+    width: 0px;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.control {
+    font-size: 30px;
+    color: gold;
+    margin: 20px 40px;
+    cursor: pointer;
+    
+}
+
+.repeatAndShfell {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 400px;
+}
+
+.controlOne {
+    font-size: 20px;
+    color: gold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#repeatButton {
+    position: relative;
+}
+
+.One {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: rgb(45, 60, 45, 0.4);
+    color: white;
+    font-size: 0.7em;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    border-radius: 50%;
+    display: none;  /* Initially hidden */
+}
