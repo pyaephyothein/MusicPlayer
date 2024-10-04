@@ -5,6 +5,58 @@ body {
     background-attachment: fixed;
 }
 
+.firstContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.menuContainer {
+    width: 80%;
+}
+.menu {
+    display: inline;
+    margin-left: 20px;
+    border: none;
+    border-radius: 30px;
+    width: 40px;
+    font-size: 15px;
+    color: white;
+    font-display: center;
+}
+
+.resultText {
+    
+    width: 400px;
+    
+}
+.inputWapper {
+    position: relative;
+    width: 100%;
+}
+
+.autocompleteInput {
+    width: 80%;
+    border: none;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: rgba(237, 247, 90, 0.4);
+    color: white;
+
+}
+.fa-magnifying-glass {
+    position: absolute;
+    right: 90px; /* Positioning the icon to the right inside the input */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4b6df4; /* Icon color */
+    pointer-events: none; /* Prevent icon from blocking input clicks */
+}
+
+
+
 .container {
     display: flex;
     flex-direction: row;

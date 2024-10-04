@@ -10,16 +10,16 @@ const tracImageTag = document.getElementById("trackImages")
 
 
 const tracks = [
-    {trackID : "songs/Eminem - Somebody Save Me (feat. Jelly Roll) [Official Music Video].mp3", title: "Somebody Save Me - Eminem", photos: "images/images 1.jpeg"},
-    {trackID: "songs/Future, Metro Boomin - Like That (Official Audio).mp3", title: "Metro Boomin - Like That ", photos: "images/images22.jpg"},
-    {trackID: "songs/The Emptiness Machine.mp3", title: "The Emptiness Machine - Linkkin Park", photos: "images/images3.jpeg"},
-    {trackID: "songs/Travis Scott - MO CITY FLEXOLOGIST.mp3", title: "Travis Scott - MO City", photos: "images/images4.png"},
-    {trackID: "songs/Travis_Scott_Fein_ft.Playboi Carti .mp3", title: "Fein - Travis Scott ft. Playboi Carti", photos: "images/images5.jpg"},
-    {trackID: "songs/Eminem - Lose Yourself [HD].mp3", title: "Eminem - Lose Youreself", photos: "images/images6.jpg"},
-    {trackID: "songs/Justin Bieber - Intentions (Official Video (Short Version)) ft. Quavo.mp3", title: "Justin Biber - Intentions", photos: "images/images7.jpg"},
-    {trackID: "songs/Kendrick Lamar - Not Like Us.mp3", title: "Kendirck Lamar - Not Like Us", photos: "images/images8.jpeg"},
-    {trackID: "songs/Kendrick Lamar Euphoria (Drake Diss) (Lyrics).mp3", title: "Kendirck Lamar - Euphoria", photos: "images/images9.png"},
-    {trackID: "songs/LANY - Malibu Nights (Official Music Video).mp3", title: "Lany - Marlibu Night", photos: "images/images10.jpg"},
+    {trackID : "songs/Eminem - Somebody Save Me (feat. Jelly Roll) [Official Music Video].mp3", title: "Somebody Save Me - Eminem", photos: "images/images 1.jpeg", id: 1},
+    {trackID: "songs/Future, Metro Boomin - Like That (Official Audio).mp3", title: "Metro Boomin - Like That ", photos: "images/images22.jpg", id: 2},
+    {trackID: "songs/The Emptiness Machine.mp3", title: "The Emptiness Machine - Linkkin Park", photos: "images/images3.jpeg", id: 3},
+    {trackID: "songs/Travis Scott - MO CITY FLEXOLOGIST.mp3", title: "Travis Scott - MO City", photos: "images/images4.png", id: 4},
+    {trackID: "songs/Travis_Scott_Fein_ft.Playboi Carti .mp3", title: "Fein - Travis Scott ft. Playboi Carti", photos: "images/images5.jpg", id: 5},
+    {trackID: "songs/Eminem - Lose Yourself [HD].mp3", title: "Eminem - Lose Youreself", photos: "images/images6.jpg", id: 6},
+    {trackID: "songs/Justin Bieber - Intentions (Official Video (Short Version)) ft. Quavo.mp3", title: "Justin Biber - Intentions", photos: "images/images7.jpg", id: 7},
+    {trackID: "songs/Kendrick Lamar - Not Like Us.mp3", title: "Kendirck Lamar - Not Like Us", photos: "images/images8.jpeg", id: 8},
+    {trackID: "songs/Kendrick Lamar Euphoria (Drake Diss) (Lyrics).mp3", title: "Kendirck Lamar - Euphoria", photos: "images/images9.png", id: 9},
+    {trackID: "songs/LANY - Malibu Nights (Official Music Video).mp3", title: "Lany - Marlibu Night", photos: "images/images10.jpg", id: 10},
 ];
 
 for (let i = 0; i < tracks.length; i++) {
