@@ -190,3 +190,38 @@ const getRandomTrackIndex = () => {
     }
     return randomIndex;
 };
+const resultContainerTag = document.getElementsByClassName("resultContainer")[0];
+const autoCompleteTag = document.getElementsByClassName("autocompleteInput")[0];
+autoCompleteTag.addEventListener("keyup", (event) =>{
+    const searchText = event.target.value.toLowerCase();
+    const filterTracks = tracks.filter(track => {
+        return track.title.toLowerCase().includes(searchText);
+    }); 
+
+    resultContainerTag.innerHTML = '';
+    const hasTracksToShow = filterTracks.length > 0;
+    if (hasTracksToShow) {
+        for (let i = 0 ; i < filterTracks.length; i++) {
+            const trackItemContainer = document.createElement("div")
+            trackItemContainer.id = filterTracks[i].id;
+            trackItemContainer.classList.add("trackItemContainer");
+
+            const trackName = document.createElement("div");
+            trackName.classList.add("trackName");
+            trackName.append(filterTracks[i].title);
+
+            const trackImage = document.createElement("img");
+            trackImage.classList.add("trackImage");
+            trackImage.src = filterTracks[i].photos;
+
+            trackItemContainer.append(trackName, trackImage);
+            resultContainerTag.append(trackItemContainer);
+        }
+
+    } else {
+        // Optionally, display a "no results found" message
+        const noResults = document.createElement("div");
+        noResults.textContent = "No songs found";
+        resultContainerTag.append(noResults);
+    }
+});
